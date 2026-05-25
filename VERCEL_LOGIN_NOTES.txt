@@ -1,0 +1,15 @@
+Vercel login is configured to work without mandatory Environment Variables.
+
+Demo accounts:
+admin@demo.local / Admin@123
+agent@demo.local / Agent@123
+viewer@demo.local / Viewer@123
+
+Optional production variables:
+APP_SECRET=your-long-random-secret
+ADMIN_EMAIL=your-admin-email
+ADMIN_PASSWORD=your-strong-password
+ADMIN_NAME=Admin Name
+
+Frontend API base is relative: /api
+Node engine: 24.x

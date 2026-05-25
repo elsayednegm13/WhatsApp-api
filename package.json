@@ -1,0 +1,18 @@
+{
+  "name": "whatsapp-api-admin",
+  "version": "1.0.0",
+  "description": "WhatsApp messages, auto replies, users, permissions, and webhook management app.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-vercel.js",
+    "vercel-build": "node scripts/build-vercel.js",
+    "verify": "node scripts/verify-deploy.js",
+    "frontend": "node scripts/static-server.js",
+    "dev": "node server/index.js",
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

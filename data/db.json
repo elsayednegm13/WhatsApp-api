@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "21976572-c560-4e85-a0fd-671c1ceecad2",
+      "name": "ليلى منصور",
+      "email": "admin@demo.local",
+      "salt": "local_admin_reset_2026",
+      "passwordHash": "29a3a83b7b65725a8c82a65b43c9e261a96ae466793b9eb89952bfc4218b1b5f",
+      "role": "admin",
+      "status": "active",
+      "lastLoginAt": "2026-05-25T02:29:47.381Z",
+      "createdAt": "2026-05-24T22:18:29.850Z",
+      "updatedAt": "2026-05-25T02:29:47.381Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "7e3f7928-fc9f-4ae0-a212-8048ffab53bc",
+      "waMessageId": "wamid.seed.1001",
+      "direction": "inbound",
+      "from": "+201001112233",
+      "to": "+201055501234",
+      "contactName": "سارة خالد",
+      "text": "مرحبًا، أريد معرفة حالة طلبي",
+      "status": "received",
+      "matchedRuleId": "rule_order_status",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T06:12:00.000Z"
+    },
+    {
+      "id": "e6fde36f-d99d-48ee-bcaa-d8920b053c9f",
+      "waMessageId": "local.seed.1002",
+      "direction": "outbound",
+      "from": "+201055501234",
+      "to": "+201001112233",
+      "contactName": "سارة خالد",
+      "text": "أرسل لنا رقم الطلب وسنراجع حالته فورًا.",
+      "status": "sent",
+      "matchedRuleId": "rule_order_status",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T06:12:02.000Z"
+    },
+    {
+      "id": "06d661f0-aa71-4d18-a236-44450849f0a3",
+      "waMessageId": "wamid.seed.1003",
+      "direction": "inbound",
+      "from": "+201002224455",
+      "to": "+201055501234",
+      "contactName": "مروان فؤاد",
+      "text": "ما مواعيد العمل؟",
+      "status": "received",
+      "matchedRuleId": "rule_hours",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T07:04:00.000Z"
+    }
+  ],
+  "autoReplies": [
+    {
+      "id": "rule_order_status",
+      "name": "حالة الطلب",
+      "keyword": "حالة طلبي",
+      "matchType": "contains",
+      "replyText": "أرسل لنا رقم الطلب وسنراجع حالته فورًا.",
+      "priority": 1,
+      "enabled": true,
+      "caseSensitive": false,
+      "createdAt": "2026-05-24T22:18:29.947Z",
+      "updatedAt": "2026-05-24T22:57:37.908Z"
+    },
+    {
+      "id": "rule_hours",
+      "name": "مواعيد العمل",
+      "keyword": "مواعيد العمل",
+      "matchType": "contains",
+      "replyText": "مواعيد العمل من 9 صباحًا حتى 6 مساءً، من الأحد إلى الخميس.",
+      "priority": 2,
+      "enabled": true,
+      "caseSensitive": false,
+      "createdAt": "2026-05-24T22:18:29.947Z",
+      "updatedAt": "2026-05-24T22:18:29.947Z"
+    }
+  ],
+  "settings": {
+    "businessName": "Bot",
+    "phoneNumberId": "1234567890",
+    "businessPhone": "+201055501234",
+    "webhookUrl": "https://bot-dusky-seven.vercel.app/api/webhook",
+    "encryptedVerifyToken": "enc:vbOFpmvCy_kSzdBY:8mPbWaHevS2U9FpLT1lBbg:vfmZoz6f3WqRKd5YxiFi",
+    "encryptedAccessToken": "enc:gHx1mWLjo9HoA3ix:KsbvQGYpkxW2FRay8ZfmhQ:pu4MNpHxdwzl0oFEI6t4EOYhPv45kNMmS-vDWcRBscFHLDVclHTXKW1nUvtR5hU2RDnb-RhwkgS47fIKyqXXJxW5GbKeIhhU9XkE6IAd_yWPg3-P4iyJOyb3Aj-vpCSvzmx4TaaFqL8ZHH9JlksiWrawJOOm7p-APdYP_i4zuqQJVSECbjGl1F7OfUXLL-GYFoyUtLl0Rtg8U2UYDUijIwkIcgRk1UNtz34JCum_uHRVcQJJ5PZ5TXoRRjhSzkjt5Z62xtZS_mwYYI50oLzXAwqi3J6TRDkTYG-FDarabEnZZS1qCLwJ9xyZhb0",
+    "encryptedAppSecret": "enc:-C1MmvtBDF5Pc3E3:fG79KyVth6bfwqB4edghiA:zcKHgfWUUCGA2_t8_Ui8jeLs8q42urOr0jV-bBzQ-5E",
+    "sendMode": "cloud",
+    "autoReplyEnabled": true,
+    "updatedAt": "2026-05-24T22:52:29.831Z"
+  },
+  "revokedTokenIds": [
+    "5ef2f3a3-172b-4581-86bd-b793d3a759fd",
+    "35c87b83-c34f-451b-a89c-9e6ae1006213",
+    "b2944b67-d8e5-46ec-8385-2a8bf1e85b86",
+    "00c17fa9-31a4-44dc-b9f8-f7fa98485023"
+  ]
+}

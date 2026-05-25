@@ -1,0 +1,123 @@
+{
+  "users": [
+    {
+      "id": "35b362bd-930b-447d-8d26-029108bfb406",
+      "name": "ليلى منصور",
+      "email": "admin@demo.local",
+      "salt": "db2166b75ae9c41bd9d1c51dd8ad2f39",
+      "passwordHash": "9fe7121e88f4bad8d59622482c6507e8f61656ae537b09c4859b9d0b9ec7bb56",
+      "role": "admin",
+      "status": "active",
+      "lastLoginAt": null,
+      "createdAt": "2026-05-24T22:59:44.492Z",
+      "updatedAt": "2026-05-24T22:59:44.493Z"
+    },
+    {
+      "id": "be6c94c3-0e5d-4119-99ff-cf963d35c66f",
+      "name": "أحمد سالم",
+      "email": "agent@demo.local",
+      "salt": "4b64a13300dba65798173a4248fba4c7",
+      "passwordHash": "0f3961601d8857c9c90f416bb17ce900d67eb1d05b11ed8d19f073329dbe19f9",
+      "role": "agent",
+      "status": "active",
+      "lastLoginAt": null,
+      "createdAt": "2026-05-24T22:59:44.538Z",
+      "updatedAt": "2026-05-24T22:59:44.538Z"
+    },
+    {
+      "id": "ecd2c9a6-52ce-48ea-af45-609b95e5c9c4",
+      "name": "نور علي",
+      "email": "viewer@demo.local",
+      "salt": "97ef1475459e2df92d86e1f50691670c",
+      "passwordHash": "47b599f1453af4648c7121709841131a0da2d20e6df1a5594a557aaa27e075d8",
+      "role": "viewer",
+      "status": "active",
+      "lastLoginAt": null,
+      "createdAt": "2026-05-24T22:59:44.586Z",
+      "updatedAt": "2026-05-24T22:59:44.586Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "b3d797c0-4543-45a4-89de-0f031de4d71d",
+      "waMessageId": "wamid.seed.1001",
+      "direction": "inbound",
+      "from": "+201001112233",
+      "to": "+201055501234",
+      "contactName": "سارة خالد",
+      "text": "مرحبًا، أريد معرفة حالة طلبي",
+      "status": "received",
+      "matchedRuleId": "rule_order_status",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T06:12:00.000Z"
+    },
+    {
+      "id": "dbb33707-af2f-4999-9900-dadd36f2e068",
+      "waMessageId": "local.seed.1002",
+      "direction": "outbound",
+      "from": "+201055501234",
+      "to": "+201001112233",
+      "contactName": "سارة خالد",
+      "text": "أرسل لنا رقم الطلب وسنراجع حالته فورًا.",
+      "status": "sent",
+      "matchedRuleId": "rule_order_status",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T06:12:02.000Z"
+    },
+    {
+      "id": "ce3fa2c2-b7e2-4e84-a73b-1678c6dbb549",
+      "waMessageId": "wamid.seed.1003",
+      "direction": "inbound",
+      "from": "+201002224455",
+      "to": "+201055501234",
+      "contactName": "مروان فؤاد",
+      "text": "ما مواعيد العمل؟",
+      "status": "received",
+      "matchedRuleId": "rule_hours",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T07:04:00.000Z"
+    }
+  ],
+  "autoReplies": [
+    {
+      "id": "rule_order_status",
+      "name": "حالة الطلب",
+      "keyword": "حالة طلبي",
+      "matchType": "contains",
+      "replyText": "أرسل لنا رقم الطلب وسنراجع حالته فورًا.",
+      "priority": 1,
+      "enabled": true,
+      "caseSensitive": false,
+      "createdAt": "2026-05-24T22:59:44.586Z",
+      "updatedAt": "2026-05-24T22:59:44.586Z"
+    },
+    {
+      "id": "rule_hours",
+      "name": "مواعيد العمل",
+      "keyword": "مواعيد العمل",
+      "matchType": "contains",
+      "replyText": "مواعيد العمل من 9 صباحًا حتى 6 مساءً، من الأحد إلى الخميس.",
+      "priority": 2,
+      "enabled": true,
+      "caseSensitive": false,
+      "createdAt": "2026-05-24T22:59:44.586Z",
+      "updatedAt": "2026-05-24T22:59:44.586Z"
+    }
+  ],
+  "settings": {
+    "businessName": "Nile Support",
+    "phoneNumberId": "1234567890",
+    "businessPhone": "+201055501234",
+    "webhookUrl": "/api/webhooks/whatsapp",
+    "encryptedVerifyToken": "enc:Yj3ApykWZv_x3k_b:HHYXzH_UEcVQ0_I3w24taA:ihEj3-RoV3ghD5IgPrrqjrE",
+    "encryptedAccessToken": null,
+    "encryptedAppSecret": null,
+    "sendMode": "mock",
+    "autoReplyEnabled": true,
+    "updatedAt": "2026-05-24T22:59:44.587Z"
+  },
+  "revokedTokenIds": []
+}

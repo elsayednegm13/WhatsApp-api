@@ -1,0 +1,99 @@
+{
+  "users": [
+    {
+      "id": "b7a13011-2aea-4e71-8a33-c9b84a6bdbdf",
+      "name": "Owner",
+      "email": "owner@example.com",
+      "salt": "7ef385749cff8eebc7aaebd11583ce86",
+      "passwordHash": "4f819559e0a8a86e035702a6b19e72e051dcb76b0b3c30af76427b959536a9e2",
+      "role": "admin",
+      "status": "active",
+      "lastLoginAt": "2026-05-24T23:02:56.941Z",
+      "createdAt": "2026-05-24T23:02:56.879Z",
+      "updatedAt": "2026-05-24T23:02:56.941Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "71344403-9e46-4b5e-8295-c1c0e2afe93b",
+      "waMessageId": "wamid.seed.1001",
+      "direction": "inbound",
+      "from": "+201001112233",
+      "to": "+201055501234",
+      "contactName": "سارة خالد",
+      "text": "مرحبًا، أريد معرفة حالة طلبي",
+      "status": "received",
+      "matchedRuleId": "rule_order_status",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T06:12:00.000Z"
+    },
+    {
+      "id": "841ace9c-1e5f-4a93-9125-4dfa6ea56ce5",
+      "waMessageId": "local.seed.1002",
+      "direction": "outbound",
+      "from": "+201055501234",
+      "to": "+201001112233",
+      "contactName": "سارة خالد",
+      "text": "أرسل لنا رقم الطلب وسنراجع حالته فورًا.",
+      "status": "sent",
+      "matchedRuleId": "rule_order_status",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T06:12:02.000Z"
+    },
+    {
+      "id": "4a1fd768-5957-49f1-af44-43d1a9726012",
+      "waMessageId": "wamid.seed.1003",
+      "direction": "inbound",
+      "from": "+201002224455",
+      "to": "+201055501234",
+      "contactName": "مروان فؤاد",
+      "text": "ما مواعيد العمل؟",
+      "status": "received",
+      "matchedRuleId": "rule_hours",
+      "raw": null,
+      "error": null,
+      "createdAt": "2026-05-25T07:04:00.000Z"
+    }
+  ],
+  "autoReplies": [
+    {
+      "id": "rule_order_status",
+      "name": "حالة الطلب",
+      "keyword": "حالة طلبي",
+      "matchType": "contains",
+      "replyText": "أرسل لنا رقم الطلب وسنراجع حالته فورًا.",
+      "priority": 1,
+      "enabled": true,
+      "caseSensitive": false,
+      "createdAt": "2026-05-24T23:02:56.880Z",
+      "updatedAt": "2026-05-24T23:02:56.880Z"
+    },
+    {
+      "id": "rule_hours",
+      "name": "مواعيد العمل",
+      "keyword": "مواعيد العمل",
+      "matchType": "contains",
+      "replyText": "مواعيد العمل من 9 صباحًا حتى 6 مساءً، من الأحد إلى الخميس.",
+      "priority": 2,
+      "enabled": true,
+      "caseSensitive": false,
+      "createdAt": "2026-05-24T23:02:56.880Z",
+      "updatedAt": "2026-05-24T23:02:56.880Z"
+    }
+  ],
+  "settings": {
+    "businessName": "Nile Support",
+    "phoneNumberId": "1234567890",
+    "businessPhone": "+201055501234",
+    "webhookUrl": "/api/webhooks/whatsapp",
+    "encryptedVerifyToken": "enc:_pZ4qVxCRGJ2i2ff:A67pvsIo8qaYZO0DL5Zh_A:DmJCz0xsaGM0ycECktXkVXw",
+    "encryptedAccessToken": null,
+    "encryptedAppSecret": null,
+    "sendMode": "mock",
+    "autoReplyEnabled": true,
+    "updatedAt": "2026-05-24T23:02:56.881Z"
+  },
+  "revokedTokenIds": []
+}
